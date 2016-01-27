@@ -88,6 +88,8 @@ input[placeholder] {
 
 input[type="text"],
 select[name="user_state"],
+input[type="tel"],
+input[type="email"],
 .button {
 	display: block;
 	width: 95%;
@@ -96,23 +98,31 @@ select[name="user_state"],
 	margin-bottom: 5px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
 	transition: background-color 1s ease;
 	background-color: #e0e0eb;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
 	transition: background-color 1.5s ease;
 	background-color: #80ff80;
 	border: 2px solid black;
 }
 
-input[type="text"]:hover {
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover {
 	transition: background-color 1s ease;
 	background-color: #fff;
 }
 
 input[type="text"],
+input[type="tel"],
+input[type="email"],
 select[name="user_state"] {
 	margin-top: 10px;
 	height: 30px;
@@ -193,13 +203,6 @@ input[type="radio"] {
   Media Queries
 ==================================== */
 
-@media (max-width: 360px) {
-
-/*	h1 {
-		font-size: 2em;
-	}*/
-}
-
 @media (min-width: 550px) {
 
 	#container {
@@ -211,7 +214,9 @@ input[type="radio"] {
 @media (min-width: 760px) {
 
 	input[type="text"],
-	select[name="user_state"] {
+	select[name="user_state"],
+	input[type="tel"],
+	input[type="email"] {
 		display: inline-block;
 		width: 310px;
 	}
@@ -234,12 +239,7 @@ input[type="radio"] {
 		margin-right: 0;
 	}
 
-/*.ziplabel {
-	margin-top: 15px;
-}*/
-
 	#container {
-/*		max-width: 500px;*/
 		margin: 0 auto;
 	}
 
