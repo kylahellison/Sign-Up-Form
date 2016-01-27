@@ -1,0 +1,251 @@
+/* ================================= 
+ BASIC
+==================================== */
+
+html {
+	font-family: 'Alegreya', serif;
+	font-weight: 400;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+
+h1 {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 1.85em;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	background-color: #333;
+	color: #e6e6e6;
+	border-bottom: 3px solid #000;
+	margin-top: 0;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+legend {
+	font-weight: 700;
+	font-size: 1.25em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+span {
+	display: inline-block;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+hr {
+	width: 96%;
+	height: 2px;
+	border: none;
+	color: #000;
+	background-color: #000;
+}
+
+.thick {
+	height: 4px;
+	margin-bottom: -4px;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* ================================= 
+ FORM STYLES
+==================================== */
+
+.round {
+	border-radius: 5px;
+	background-color: #e0e0eb;
+	border: 1px solid;
+}
+
+input[placeholder] {
+	text-align: right;
+}
+
+
+#name:focus,
+#email:focus {
+	text-align: left;
+}
+
+input[type="text"],
+select[name="user_state"],
+.button {
+	display: block;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5px;
+}
+
+input[type="text"] {
+	transition: background-color 1s ease;
+	background-color: #e0e0eb;
+}
+
+input[type="text"]:focus {
+	transition: background-color 1.5s ease;
+	background-color: #80ff80;
+	border: 2px solid black;
+}
+
+input[type="text"]:hover {
+	transition: background-color 1s ease;
+	background-color: #fff;
+}
+
+input[type="text"],
+select[name="user_state"] {
+	margin-top: 10px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+label {
+	margin-top: 13px;
+	margin-bottom: 10px;
+}
+
+label,
+.lmargin {
+	margin-left: 10px;
+}
+
+.bmargin {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.topmargin {
+	display: inline-block;
+	margin-top: 13px;
+}
+
+#zip {
+	margin-bottom: 20px;
+	width: 40%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#other {
+	width: 95%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#other:focus {
+	transition: background-color 1.5s ease;
+	background-color: #fff;
+	border: 2px solid black;
+}
+
+.button {
+	padding: 15px;
+	background-color: #73264d;
+	color: #fff;
+}
+
+.button:hover {
+	opacity: .85;
+}
+
+.signup {
+	font-size: 20px;
+}
+
+#copyright {
+	display: block;
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 360px) {
+
+/*	h1 {
+		font-size: 2em;
+	}*/
+}
+
+@media (min-width: 550px) {
+
+	#container {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 760px) {
+
+	input[type="text"],
+	select[name="user_state"] {
+		display: inline-block;
+		width: 310px;
+	}
+
+	select[name="user_state"] {
+		width: 323px;
+	}	
+
+	.float {
+		display: inline-block;
+		float: left;
+		clear: left;
+		width: 150px;
+		text-align: left;
+	}
+
+	#zip {
+		width: 100px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+/*.ziplabel {
+	margin-top: 15px;
+}*/
+
+	#container {
+/*		max-width: 500px;*/
+		margin: 0 auto;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
